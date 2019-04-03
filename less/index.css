@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  font-size: 26.6667vw;
+}
+body {
+  font-size: 0.14rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+input {
+  border: none;
+}
+/*清除浮动*/
+.clearfix::before {
+  content: '';
+  display: block;
+  clear: both;
+}
+.bt {
+  border-top: 0.01rem solid #ccc;
+}
+.bb {
+  border-bottom: 0.01rem solid #ccc;
+}
+.bl {
+  border-left: 0.01rem solid #ccc;
+}
+.br {
+  border-right: 0.01rem solid #ccc;
+}
+html {
+  font-size: 26.6667vw;
+}
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  width: 100%;
+  z-index: 2;
+}
+#header .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.8rem;
+  height: 0.4rem;
+}
+#header .left .icon-logo {
+  width: 0.6rem;
+  height: 0.23rem;
+  background: url(../images/sprites.png) 0 -1.1rem / 2rem 2rem;
+}
+#header .center {
+  flex: 1;
+}
+#header .center form {
+  position: relative;
+  padding: 0.05rem 0;
+}
+#header .center form .icon-search {
+  position: absolute;
+  top: 0.1rem;
+  left: 0.05rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url(../images/sprites.png) -0.6rem -1.1rem / 2rem 2rem;
+}
+#header .center form input {
+  padding-left: 0.3rem;
+  width: 100%;
+  height: 0.3rem;
+  border-radius: 0.15rem;
+  font-size: 0.14rem;
+}
+#header .right {
+  width: 0.5rem;
+  height: 0.4rem;
+}
+#header .right a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 0.4rem;
+  color: #fff;
+  text-decoration: none;
+}
+/*轮播图区域*/
+#slide img {
+  width: 100%;
+}
+/*导航区域*/
+#nav {
+  padding: 0.1rem 0;
+}
+#nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#nav ul li {
+  width: 25%;
+}
+#nav ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#nav ul li a img {
+  width: 0.4rem;
+}
+#nav ul li a p {
+  font-size: 0.14rem;
+  margin: 0.1rem 0;
+}
+/*主体区域*/
+#main {
+  background-color: #eee;
+  padding: 0.1rem;
+  padding-bottom: 0.8rem;
+  /*秒杀区域*/
+  /*超市区域*/
+}
+#main .seckill {
+  background-color: #fff;
+}
+#main .seckill .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 0.4rem;
+  font-size: 0.14rem;
+}
+#main .seckill .title .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .seckill .title .left img {
+  margin-left: 0.05rem;
+  width: 0.2rem;
+}
+#main .seckill .title .left > span {
+  margin-left: 0.05rem;
+  color: #de181b;
+}
+#main .seckill .title .left .downtime {
+  margin-left: 0.05rem;
+}
+#main .seckill .title .left .downtime span {
+  display: inline-block;
+  width: 0.15rem;
+  height: 0.15rem;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 0.15rem;
+}
+#main .seckill .content ul {
+  display: flex;
+}
+#main .seckill .content ul li {
+  flex: 1;
+}
+#main .seckill .content ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main .seckill .content ul li a img {
+  width: 1.1rem;
+}
+#main .seckill .content ul li a span {
+  font-size: 0.12rem;
+  color: #de181b;
+}
+#main .seckill .content ul li a del {
+  font-size: 0.12rem;
+  color: #ccc;
+}
+#main .seckill .content ul li ~ li {
+  border-left: 0.01rem solid #ccc;
+}
+#main .supermarket {
+  margin-top: 0.1rem;
+  background-color: #fff;
+}
+#main .supermarket .title {
+  position: relative;
+  height: 0.4rem;
+  color: black;
+  font-size: 0.18rem;
+  line-height: 0.4rem;
+  border-bottom: 0.01rem solid #ccc;
+}
+#main .supermarket .title h4 {
+  font-weight: normal;
+  margin-left: 0.4rem;
+}
+#main .supermarket .title h4::before {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  left: 1.6rem;
+  width: 0.05rem;
+  height: 0.2rem;
+  background-color: #de181b;
+}
+#main .supermarket .content {
+  display: flex;
+}
+#main .supermarket .content .left {
+  flex: 1;
+}
+#main .supermarket .content .left a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .supermarket .content .left a img {
+  width: 100%;
+}
+#main .supermarket .content .right {
+  flex: 1;
+}
+#main .supermarket .content .right a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main .supermarket .content .right a img {
+  width: 100%;
+}
+/*底部区域*/
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+#footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer ul li {
+  width: 25%;
+}
+#footer ul li a {
+  display: block;
+  text-align: center;
+}
+#footer ul li a img {
+  width: 0.85rem;
+}

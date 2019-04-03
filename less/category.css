@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  font-size: 26.6667vw;
+}
+body {
+  font-size: 0.14rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+input {
+  border: none;
+}
+/*清除浮动*/
+.clearfix::before {
+  content: '';
+  display: block;
+  clear: both;
+}
+.bt {
+  border-top: 0.01rem solid #ccc;
+}
+.bb {
+  border-bottom: 0.01rem solid #ccc;
+}
+.bl {
+  border-left: 0.01rem solid #ccc;
+}
+.br {
+  border-right: 0.01rem solid #ccc;
+}
+html {
+  font-size: 26.66667vw;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: .14rem;
+  height: 100vh;
+}
+#header {
+  display: flex;
+  height: 0.4rem;
+  background-color: #ccc;
+}
+#header .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+#header .left .back {
+  display: inline-block;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url(../images/sprites.png) -0.2rem 0 / 2rem 2rem;
+}
+#header .center {
+  flex: 1;
+}
+#header .center form {
+  padding-top: 0.05rem;
+  position: relative;
+}
+#header .center form .icon-search {
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url(../images/sprites.png) -0.6rem -1.1rem / 2rem 2rem;
+}
+#header .center form input {
+  padding-left: 0.3rem;
+  width: 100%;
+  height: 0.3rem;
+  border-radius: 0.15rem;
+  font-size: 0.14rem;
+}
+#header .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+#header .right .menu {
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url(../images/sprites.png) -0.6rem 0 / 2rem 2rem;
+}
+#main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+#main .left {
+  width: 0.85rem;
+  height: 100%;
+}
+#main .left .swiper-container {
+  height: 100%;
+}
+#main .left .swiper-container .swiper-slide {
+  height: auto;
+}
+#main .left .swiper-container .swiper-slide ul {
+  background-color: #ccc;
+}
+#main .left .swiper-container .swiper-slide ul li {
+  height: 0.46rem;
+}
+#main .left .swiper-container .swiper-slide ul li a {
+  display: block;
+  line-height: 0.45rem;
+  text-align: center;
+}
+#main .left .swiper-container .swiper-slide ul li.active a {
+  background-color: #fff;
+  color: #de181b;
+}
+#footer {
+  height: 0.5rem;
+  background-color: #ccc;
+}
+#footer ul {
+  display: flex;
+}
+#footer ul li {
+  flex: 1;
+}
+#footer ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer ul li a img {
+  width: 0.65rem;
+  height: 0.5rem;
+}

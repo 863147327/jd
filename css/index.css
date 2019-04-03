@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 头部容器 */
+#header {
+    display: flex;
+    background-color: #ccc;
+}
+
+/* 设计稿也是2倍图 但是CSS像素参照是视口 在设计稿2倍图基础上全部/2 */
+#header .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    background: green;
+}
+#header .left .icon-logo {
+    width: 60px;
+    height: 23px;
+    background:url("../images/sprites.png") 0 -110px;
+    background-size: 200px 200px;
+}
+#header .right {
+    width: 50px;
+    height: 40px;
+    background-color: orange;
+}
+#header .right a {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+#header .center {
+    flex: 1;
+    background-color: pink;
+}
+#header .center form {
+    padding: 5px 0;
+    position: relative;
+}
+#header .center form .icon-search {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprites.png") -60px -110px;
+    background-size: 200px 200px;
+}
+#header .center form input {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 30px;
+}
+

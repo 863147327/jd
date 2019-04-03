@@ -1,0 +1,142 @@
+@import "base.less";
+
+html {
+    font-size: 26.66667vw;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: .14rem;
+    height: 100vh;
+}
+
+// 头部搜索框
+#header {
+    display: flex;
+    height: 0.4rem;
+    background-color: #ccc;
+
+    .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0.4rem;
+        height: 0.4rem;
+
+        .back {
+            display: inline-block;
+            width: 0.2rem;
+            height: 0.2rem;
+            background: ~"url(../images/sprites.png) -0.2rem 0 / 2rem 2rem";
+        }
+    }
+
+    .center {
+        flex: 1;
+
+        form {
+            padding-top: 0.05rem;
+            position: relative;
+
+            .icon-search {
+                position: absolute;
+                top: 0.1rem;
+                left: 0.1rem;
+                width: 0.2rem;
+                height: 0.2rem;
+                background: ~"url(../images/sprites.png) -0.6rem -1.1rem / 2rem 2rem";
+            }
+
+            input {
+                padding-left: 0.3rem;
+                width: 100%;
+                height: 0.3rem;
+                border-radius: 0.15rem;
+                font-size: 0.14rem;
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0.4rem;
+        height: 0.4rem;
+
+        .menu {
+            width: 0.2rem;
+            height: 0.2rem;
+            background: ~"url(../images/sprites.png) -0.6rem 0 / 2rem 2rem";
+        }
+    }
+}
+
+
+//主体区域
+#main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    .left {
+        // background-color: #ccc;
+        width: 0.85rem;
+        height: 100%;
+        .swiper-container {
+            height: 100%;
+                .swiper-slide {
+                    height: auto;
+                    ul {
+                        background-color: #ccc;
+                        li {
+                            height: 0.46rem;
+                            a {
+                                display: block;
+                                line-height: 0.45rem;
+                                text-align: center;
+                            }
+                        }
+                        li.active {
+                            a {
+                                background-color: #fff;
+                                color: @main-color;
+                            }
+                        }
+                    }
+                }
+        }
+    } 
+    .right {
+        
+    }
+
+}
+
+
+
+
+// 底部区域
+#footer {
+    height: 0.5rem;
+    background-color: #ccc;
+
+    ul {
+        display: flex;
+
+        li {
+            flex: 1;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 0.65rem;
+                    height: 0.5rem;
+                }
+            }
+        }
+    }
+}

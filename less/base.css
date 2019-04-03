@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  font-size: 26.6667vw;
+}
+body {
+  font-size: 0.14rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+input {
+  border: none;
+}
+/*清除浮动*/
+.clearfix::before {
+  content: '';
+  display: block;
+  clear: both;
+}
+.bt {
+  border-top: 0.01rem solid #ccc;
+}
+.bb {
+  border-bottom: 0.01rem solid #ccc;
+}
+.bl {
+  border-left: 0.01rem solid #ccc;
+}
+.br {
+  border-right: 0.01rem solid #ccc;
+}
